@@ -1,0 +1,265 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant:wght@500&display=swap');
+
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust the height as needed */
+    background-color: #000000;}
+    
+.logo {
+  background-image: url('LOGO.png');
+  font-size: 30px;
+  position: fixed;
+  display: inline-block;
+  margin-left: 35px;
+ 
+}
+
+.logo img {
+  width: 160px; /* Adjust the width and height as desired */
+  height: 160px;
+ 
+  
+}
+
+.menu {
+  position: absolute;
+  top: 57px;
+  right: 50px;
+  font-size: 30px;
+  
+}
+.menu a{
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 40px;
+  transition: color 0.3s;
+}
+.menu a:hover {
+  color: #4699e7; /* Set the color for the menu buttons when hovering */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #040d15;
+
+}
+  .image-container {
+    position: relative;
+    display: inline-block;
+    min-height: 100vh;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .mainImg{
+width: 100%;
+height: auto;
+object-fit: cover;
+overflow: hidden;
+width: 100%;
+height: auto;
+object-fit: cover;
+overflow: hidden;
+
+
+  }
+  .mainbtn {
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    padding: 25px 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 22px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+
+  }
+  .image-container .mainbtn:hover {
+    background-color: #d679c7be;
+    border-color: #FFFFFF;
+    color: #ffffff;
+  }
+
+  /* Set the desired color to match the background */
+  
+  .frase1{
+    color: #ffffff;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    text-decoration: blanchedalmond;
+    font-weight: 900;
+  }
+  .frase2{
+    color: #ffffff;
+    font-size: 30px;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-weight: 400;
+
+  }
+.footer{
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  top: 0;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a{
+  
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  display:block;
+  left: 30px;
+  padding: 13px;
+  
+}
+.button{
+  
+  width: 100px;
+  height: 100px;
+  background-color: #000000;
+  border: none;
+  background: none;
+  padding: 25px;
+  margin: 0;
+  
+}
+.button img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1600px){
+
+  .overlay {
+    height: 150px; /* Adjust the value as needed */
+  }
+  .frase1 {
+    font-size: 35px; /* Adjust the value as needed */
+    top: 26%;
+  }
+  .frase2 {
+    font-size: 35px; 
+    margin-left: 60px;
+    top: 37%;/* Adjust the value as needed */
+  }
+  .mainbtn {
+    top: 55%; /* Adjust the value as needed */ /* Adjust the value as needed */
+    padding: 20px 40px; /* Adjust the value as needed */
+    font-size: 18px; /* Adjust the value as needed */
+  }
+  .logo img{
+    font-size: 20px;
+    height: 100px;
+    width: auto; /* Adjust the value as needed */
+    /* Adjust the value as needed */
+  }
+}
+
+
+
+/* Adjust the styles for screens smaller than 600px */
+@media (max-width: 800px) {
+  .overlay {
+    height: 100px; /* Adjust the value as needed */
+  }
+
+  .logo {
+    font-size: 20px; /* Adjust the value as needed */
+    margin-left: 20px; /* Adjust the value as needed */
+  }
+
+  .menu {
+    top: 37px; /* Adjust the value as needed */
+    right: 5px; /* Adjust the value as needed */
+    font-size: 15px; /* Adjust the value as needed */
+  }
+
+  .frase1 {
+    font-size: 20px; /* Adjust the value as needed */
+    top: 130px;
+  }
+
+  .frase2 {
+    font-size: 20px; 
+    margin-left: 30px;
+    top: 200px;/* Adjust the value as needed */
+  }
+
+  .mainbtn {
+    top: 35%; /* Adjust the value as needed */ /* Adjust the value as needed */
+    padding: 20px 40px; /* Adjust the value as needed */
+    font-size: 18px; /* Adjust the value as needed */
+  }
+
+  .footer {
+    height: 150px; /* Adjust the value as needed */
+    height: 0;
+  }
+
+  .footer a {
+    font-size: 12px; /* Adjust the value as needed */
+    padding: 10px; /* Adjust the value as needed */
+  }
+
+  .button {
+    width: 20px; /* Adjust the value as needed */
+    height: 20px; /* Adjust the value as needed */
+    padding: 15px; /* Adjust the value as needed */
+  }
+}
+
+/* Adjust the styles for screens smaller than 400px */
+@media (max-width: 400px) {
+  .frase1 {
+    font-size: 1px; 
+    top: 0;/* Adjust the value as needed */
+  }
+
+  .frase2 {
+    font-size: 1px;
+    top: 0; /* Adjust the value as needed */
+  }
+  .logo {
+    font-size: 10px; /* Adjust the value as needed */
+    margin-left: 10px; /* Adjust the value as needed */
+    display: flex;
+  }
+  .logo img{
+    font-size: 10px; /* Adjust the value as needed */
+    margin-left: 10px; /* Adjust the value as needed */
+    display: flex;
+  }
+}
+
