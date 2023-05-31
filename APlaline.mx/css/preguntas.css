@@ -10,7 +10,7 @@ body{
     background-color: #000000;}
     
 .logo {
-  background-image: url('file:///C:/Users/iow16/OneDrive/Documentos/APlaline.mx/imagenes/LOGO.png');
+  background-image: url('../imagenes/LOGO.png');
   font-size: 30px;
   position: fixed;
   display: inline-block;
