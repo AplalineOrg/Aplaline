@@ -200,4 +200,21 @@ body {
 		transform: scale(.97);
 }
 
+@media (max-width: 700px){
+
+.full-height-image{
+  height: 70vh;
+  width: 100%;
+}
+.conocenostext{
+  font-size: 20px;
+  
+  
+}
+.conocenos{
+  font-size: 40;
+}
+
+}
+
 		
