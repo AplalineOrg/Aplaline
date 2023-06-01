@@ -214,6 +214,11 @@ body {
 .conocenos{
   font-size: 40;
 }
+	.square-content {
+  text-align: center;
+  color: #7bff00;
+  font-size: 30px;
+}
 
 }
 
