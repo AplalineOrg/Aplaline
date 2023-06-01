@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cormorant:wght@500&family=Noto+Serif+JP:wght@200&family=Zilla+Slab:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+  html{
+    scroll-behavior: smooth;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  header {
+    background-color: #ffffff;
+    color: #1258c2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    width: 245px;
+    height: 140px;
+  }
+ 
+  .mainbtn {
+    position: absolute;
+    top: 70%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    padding: 25px 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #000000;
+    font-size: 22px;
+    border: 2px solid #000000;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    
+
+  }
+  .image-container .mainbtn:hover {
+    background-color: #053fffbe;
+    border-color: #FFFFFF;
+    color: #ffffff;
+    
+  }
+
+ 
+
+  .image-container{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+  }
+  .full-height-image {
+    height: 110vh;
+    width: 100%;
+    animation: animateImage 1s ease forwards;
+    pointer-events: none;
+    position: relative;
+    
+  }
+
+  @keyframes animateImage {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  .square {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-color: #0048bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+    
+  }
+  
+  .square-content {
+    text-align: center;
+    color: #7bff00;
+    font-size: 70px;
+  }
+
+  .square.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .sideimg {
+    height: 700px;
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+    margin-right: 100px;
+    
+  }
+  .conocenostext{
+    color: #fff;
+    font-size: 30px;
+    padding: 0 40px;
+    text-align: center;
+    
+
+  }
+
+  .conocenos{
+    font-size: 60px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    font-family: 'Anton', sans-serif;
+
+    
+  }
+  
+
+
+.image-button {
+	padding: 0;
+	margin: 0;
+	width: 600px;
+	height: 900px;
+	background: url(pexels-shvets-production-7203560.jpg);
+	background-size: cover; /* button background color */
+	
+	position: relative;
+	color: white; /* text color */
+	border-radius: 5px;
+	border: 3px solid #555; /* rounded corners */
+	text-align: center; /* centers the image inside the button */
+	font-size: 3em;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	text-decoration: none;
+	margin-right: 120px;
+	transition-duration: .60s;
+}
+.image-button2 {
+	padding: 0;
+	margin: 0;
+	width: 600px;
+	height: 900px;
+	background: url(pexels-shvets-production-7533363.jpg);
+	background-size: cover; /* button background color */
+	
+	position: relative;
+	color: white; /* text color */
+	border-radius: 5px;
+	border: 3px solid #555; /* rounded corners */
+	text-align: center; /* centers the image inside the button */
+	font-size: 3em;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	text-decoration: none;
+	margin-right: 10px;
+	transition-duration: .60s;
+}
+
+
+
+
+.image-button {
+	box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
+}
+.image-button:hover {
+	box-shadow: 0 15px 10px rgba(0,0,0, 0.5);
+	transform: scale(.97);
+}
+.image-button2 {
+	box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
+}
+.image-button2:hover {
+		box-shadow: 0 15px 10px rgba(0,0,0, 0.5);
+		transform: scale(.97);
+}
+
+		
