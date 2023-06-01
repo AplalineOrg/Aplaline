@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="Finet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Contenido de tu página principal -->
+
+
+  <!-- Script de JavaScript -->
+
+
+<header>
+    <div class="logo">
+      <img src="logo.psd.png" alt="Logo">
+    </div>
+    <nav>
+      <div class="botonc">
+        
+      </div>
+    </nav>
+  </header>
+  <div class="image-container">
+    <img src="mainimg.jpg" alt="Full-height Image" class="full-height-image" class="Image">
+    <li><a href="https://calendly.com/d/z5x-ffz-d9z/sesion" class="mainbtn" ><span>Agenda tu cita</span></a></li>
+  </div>
+
+  <h1>
+  <div class="square">
+    
+    <img src="pexels-antoni-shkraba-5816285.jpg" alt="sideimg" class="sideimg" class="Image">
+    <div class="conocenostext">
+       <p class="conocenos">Conócenos</p>
+      <p>Destaca en el mundo financiero con Aplaline. Somos una agencia especializada<br>
+         en marketing digital para empresas del sector. Impulsamos tu presencia en<br>
+         línea, generamos leads de calidad y maximizamos tu visibilidad. Confía en<br>
+          nuestro enfoque estratégico para alcanzar el crecimiento que deseas. </p>
+       
+
+    </div>
+  </div>
+  <script>
+   function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+  var vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
+  var horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
+
+  return (vertInView && horInView);
+}
+
+var square = document.querySelector('.square');
+
+function animateSquare() {
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var squareTop = square.getBoundingClientRect().top;
+  var squareHeight = square.offsetHeight;
+  var visibleHeight;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    visibleHeight = window.innerHeight - squareTop;
+  } else {
+    // Scrolling up
+    visibleHeight = squareTop + squareHeight;
+  }
+
+  if (visibleHeight >= squareHeight * 0.3 && isElementInViewport(square)) {
+    square.classList.add('animate');
+  } else {
+    square.classList.remove('animate');
+  }
+
+  lastScrollTop = scrollTop;
+}
+
+var lastScrollTop = 0;
+window.addEventListener('scroll', animateSquare);
+
+
+  </script>
+</h1>
+  
+  <div class="container">
+    <a href="#"> <button 
+      class="image-button"></button></a>
+
+    
+      <a href="#"> <button 
+        class="image-button2"></button></a>
+  </div>
+  <div class="footer-content">
+    hello
+  </div>
+  
+</body>
+</html>
+
