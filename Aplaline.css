@@ -1,0 +1,257 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* Set the body to use full height of the viewport */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Set background color to white */
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: rgb(255, 255, 255); /* Lighten header background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure header stays above other content */
+}
+
+.logo {
+  height: 90px;
+}
+
+nav button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+}
+
+nav button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rectangle {
+  width: 70vw;
+  margin-top: 150px; /* Increase top margin to avoid overlap with header */
+  height: auto; /* Allow height to adjust based on content */
+  background-color: #002E5A; /* Change background color to navy */
+  border: 5px solid white;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.rectangle-image {
+  width: 33.33%; /* Set image width */
+  max-height: 70vh; /* Limit image height */
+  object-fit: cover;
+  margin-left: 30px;
+}
+
+.whiterectangle {
+  width: 700px;
+  height: auto; /* Allow height to adjust based on content */
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 60px;
+}
+
+.whiterectangle h1 {
+  margin-top: 20px; /* Adjust top margin for better spacing */
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.whiterectangle p {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.centered-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #000000;
+  border-radius: 5px;
+  margin-top: 250px;
+}
+
+.centered-button a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
+.centered-button a:hover {
+  background-color: #316be75e;
+}
+
+
+.container {
+  margin-top: 80px;
+  max-width: 800px;
+  width: 100%; /* Increase max-width for a wider container */
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%; /* Make the form width 100% of its parent (.container) */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input, textarea, select {
+  width: 100%; /* Make input fields, textareas, and selects full-width */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+}
+
+select {
+  padding: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #1b5696;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.image-button {
+	padding: 0;
+	margin: 0;
+	width: 600px;
+	height: 900px;
+	background: url(subimg1.jpg);
+	background-size: cover; /* button background color */
+	
+	position: relative;
+	color: white; /* text color */
+	border-radius: 5px;
+	border: 3px solid #555; /* rounded corners */
+	text-align: center; /* centers the image inside the button */
+	font-size: 3em;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	text-decoration: none;
+	margin-right: 120px;
+	transition-duration: .60s;
+}
+.image-button2 {
+	padding: 0;
+	margin: 0;
+	width: 600px;
+	height: 900px;
+	background: url(subimg2.jpg);
+	background-size: cover; /* button background color */
+	
+	position: relative;
+	color: white; /* text color */
+	border-radius: 5px;
+	border: 3px solid #555; /* rounded corners */
+	text-align: center; /* centers the image inside the button */
+	font-size: 3em;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	text-decoration: none;
+	margin-right: 10px;
+	transition-duration: .60s;
+}
+
+.container {
+  display: flex;        /* Flexbox layout model */
+   /* Distributes space around items */
+  align-items: center;  /* Vertically aligns items in the center */
+  justify-content: center;
+}
+
+
+.image-button {
+	box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
+}
+.image-button:hover {
+	box-shadow: 0 15px 10px rgba(0,0,0, 0.5);
+	transform: scale(.97);
+}
+.image-button2 {
+	box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
+}
+.image-button2:hover {
+		box-shadow: 0 15px 10px rgba(0,0,0, 0.5);
+		transform: scale(.97);
+}
+
+@media (max-width: 1300px) {
+  .image-button2 {
+      display: none; /* Hide the object when screen width is 600px or less */
+  }
+  .rectangle {
+    display: none;
+}
+  
+
+}
+@media (max-width: 600px) {
+  .whiterectangle {
+      max-width: 70%; /* Adjust maximum width for smaller screens */
+      max-height:  50%;
+      padding: 20px; /* Reduce padding for smaller screens */
+  }
+}
