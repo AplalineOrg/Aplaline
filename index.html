@@ -47,9 +47,10 @@
 
 <div class="container" id="contact-form">
     
-    <form action=" https://formsubmit.co/el/genato" method="POST">
+    <form action="https://api.web3forms.com/submit" method="POST">
       <div class="form-group">
         <label for="name">Nombre:</label>
+        <input type="hidden" name="access_key" value="72ca606d-95fc-421b-8d11-22a32952949b">
         <input type="text" id="name" name="name" required>
       </div>
       <div class="form-group">
@@ -65,7 +66,7 @@
         <textarea id="message" name="message" required></textarea>
       </div>
       <div class="form-group">
-          <a class="button" type="submit" href="https://formsubmit.co/el/genato" target="_blank">Enviar</a>
+          <button type="submit">Submit Form</button>
       </div>
     </form>
   </div>
